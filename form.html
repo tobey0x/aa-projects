@@ -1,0 +1,63 @@
+
+    <form action="/survey" method="post">
+        <fieldset>
+            <legend>Add User</legend>
+
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="first_name" id="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="last_name" id="lastName">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email_address" id="email" required>
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select name="status" id="status">
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+            
+            <p>Choose your favorite programming language</p>
+            <div>
+                <input type="radio" name="programming_language" id="html">
+                <label for="language_1">HTML</label>
+                <br>
+
+                <input type="radio" name="programming_language" id="css">
+                <label for="css">CSS</label>
+                <br>
+
+                <input type="radio" name="programming_language" id="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+
+            <div>
+                <label for="currentDate">Current Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <input type="checkbox" name="sign-up" id="sign-up">
+                <label for="sign-up">Sign up for newsletter</label>
+                <br>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">Agree to terms and conditions</label>
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
